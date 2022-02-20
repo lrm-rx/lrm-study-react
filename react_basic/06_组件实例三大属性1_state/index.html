@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>测试</div>
+</body>
+<script>
+    function fn1() {
+        console.log(this.name)
+        console.log('我好想你呀!!')
+    }
+    let obj = {
+        name: '小明',
+        age: 18
+    }
+    fn1.bind(obj)
+</script>
+
+</html>
